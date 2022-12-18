@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create event</title>
   <link rel="stylesheet" href="styles/style.css">
+
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap'); 
+  </style>
+
+  <script src="./script/index.js" defer></script>
 </head>
 
 <body>
@@ -18,13 +24,32 @@
       >
     </div>
 
-    <nav class="header__nav nav">
+    <nav class="header__nav nav nav--desktop">
       <ul class="nav__list">
-        <li class="nav__item">Мероприятия</li>
+        <li class="nav__item nav__item--active">
+          Мероприятия
+        </li>
+
         <li class="nav__item">Товары</li>
+        
         <li class="nav__item">Клиенты</li>
       </ul>
     </nav>
+
+    <div class="header__user-info">
+      <div class="header__user">
+        <img
+          class="header__user-photo"
+          src="./images/user.png"
+          alt="user-photo"
+        >
+
+        <p>admin@okguru.com</p>
+      </div>
+      <button class="header__logout">
+        <img src="./images/user-exit.svg" alt="log out">
+      </button>
+    </div>
   </header>
 </body>
 

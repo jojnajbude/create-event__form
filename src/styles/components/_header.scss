@@ -5,10 +5,85 @@
   padding: 20px;
   background-color: $main-color;
 
+  color: $white;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include onDesktop {
+    border-radius: 0px 0px 43px 43px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+
   &__menu-burger {
     display: flex;
     align-items: center;
 
     width: min-content;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    transform-origin: center 0;
+    transform: scaleY(0) translateY(25%);
+
+    transition: transform .3s;
+    
+    @include onDesktop {
+      position: static;
+      transform: scaleY(1);
+    }
+
+    &--open {
+      transform: scaleY(1) translateY(0);
+    }
+  }
+  
+  &__user-info {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      gap: 16px;
+      position: absolute;
+
+      top: 50%;
+      right: 65px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__logout {
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: min-content;
+
+    &-photo {
+      height: 40px;
+      width: 40px;
+    }
   }
 }

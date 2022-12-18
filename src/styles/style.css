@@ -10,15 +10,122 @@ ul {
 .header {
   padding: 20px;
   background-color: #0D63F3;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 1024px) {
+  .header {
+    border-radius: 0px 0px 43px 43px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .header__menu-burger {
   display: flex;
   align-items: center;
   width: min-content;
 }
+@media (min-width: 1024px) {
+  .header__menu-burger {
+    display: none;
+  }
+}
+.header__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform-origin: center 0;
+  transform: scaleY(0) translateY(25%);
+  transition: transform 0.3s;
+}
+@media (min-width: 1024px) {
+  .header__nav {
+    position: static;
+    transform: scaleY(1);
+  }
+}
+.header__nav--open {
+  transform: scaleY(1) translateY(0);
+}
+.header__user-info {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .header__user-info {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    transform: translateY(-50%);
+  }
+}
+.header__logout {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: min-content;
+}
+.header__user-photo {
+  height: 40px;
+  width: 40px;
+}
 
-.nav__list {
-  color: #fff;
+.nav {
+  background-color: #0D63F3;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .nav {
+    width: 550px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.nav__item {
+  cursor: pointer;
+  width: min-content;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+}
+@media (min-width: 1024px) {
+  .nav__item {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .nav__item:hover::after {
+    transform: scaleX(1);
+  }
+}
+.nav__item--active {
+  opacity: 0.66;
 }
 
 /*# sourceMappingURL=style.css.map */
