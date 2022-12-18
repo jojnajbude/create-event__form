@@ -1,0 +1,24 @@
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  padding: 20px;
+  background-color: #0D63F3;
+}
+.header__menu-burger {
+  display: flex;
+  align-items: center;
+  width: min-content;
+}
+
+.nav__list {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
+.header {
+  padding: 20px;
+  background-color: $main-color;
+
+  &__menu-burger {
+    display: flex;
+    align-items: center;
+
+    width: min-content;
+  }
+}
