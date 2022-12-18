@@ -7,6 +7,10 @@ ul {
   list-style: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   padding: 20px;
   background-color: #0D63F3;
@@ -126,6 +130,103 @@ ul {
 }
 .nav__item--active {
   opacity: 0.66;
+}
+
+.main {
+  padding: 0 15px;
+}
+.main__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  margin-left: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.form__label--container {
+  margin: 0;
+  line-height: normal;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 30px;
+}
+.form__label--container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.form__input {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  width: 100%;
+  border: 1px solid #E6E7E8;
+  border-radius: 5px;
+  padding: 15px 20px;
+  outline: none;
+}
+.form__input:focus {
+  border: 1.3px solid #0D63F3;
+}
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.form__date-time-container {
+  display: flex;
+  gap: 20px;
+}
+.form__radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1.5px solid #0D63F3;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.form__label--container:hover input ~ .form__radiomark::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #0D63F3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
