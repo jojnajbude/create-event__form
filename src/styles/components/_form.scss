@@ -64,6 +64,10 @@
       height: 0;
       width: 0;
     }
+
+    &--file {
+      width: min-content;
+    }
   }
 
   &__input {
@@ -218,6 +222,14 @@
   }
 
   &__submit-button {
+    cursor: pointer;
+
     margin-bottom: 25px;
+
+    @include onDesktop {
+      max-width: 225px;
+
+      margin: 25px auto;
+    }
   }
 }

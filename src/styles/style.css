@@ -261,6 +261,9 @@ ul {
   height: 0;
   width: 0;
 }
+.form__label--file {
+  width: min-content;
+}
 .form__input {
   font-family: "Inter";
   font-style: normal;
@@ -378,7 +381,14 @@ ul {
   border-radius: 5px;
 }
 .form__submit-button {
+  cursor: pointer;
   margin-bottom: 25px;
+}
+@media (min-width: 1024px) {
+  .form__submit-button {
+    max-width: 225px;
+    margin: 25px auto;
+  }
 }
 
 .button {
