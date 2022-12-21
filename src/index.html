@@ -61,144 +61,270 @@
         method="get"
         class="main__form form"
       >
-        <div class="form__first-desktop-block">
-          <div class="form__input-container">
-            <label
-              for="event-name"
-              class="form__label"
-            >
-              Название мероприятия
-            </label>
-  
-            <input
-              class="form__input"
-              type="text"
-              placeholder="Введите название"
-              id="event-name"
-            >
-          </div>
-  
-          <div class="form__input-container">
-            <label
-              for="event-speaker"
-              class="form__label"
-            >
-              Имя ведущего
-            </label>
-  
-            <input
-              class="form__input"
-              type="text"
-              placeholder="Введите имя"
-              id="event-speaker"
-            >
-          </div>
-  
-          <div class="form__input-container">
-            <label
-              class="form__label"
-            >
-              Название мероприятия
-            </label>
-  
-            <div class="form__date-time-container">
-              <input
-                class="form__input"
-                type="date"
-                placeholder="Введите название"
-                id="event-name"
+        <div class="form__content">
+          <div class="form__desktop-block">
+            <div class="form__input-container">
+              <label
+                for="event-name"
+                class="form__label"
               >
-  
+                Название мероприятия
+              </label>
+    
               <input
                 class="form__input"
-                type="time"
+                type="text"
                 placeholder="Введите название"
                 id="event-name"
               >
             </div>
+    
+            <div class="form__input-container">
+              <label
+                for="event-speaker"
+                class="form__label"
+              >
+                Имя ведущего
+              </label>
+    
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Введите имя"
+                id="event-speaker"
+              >
+            </div>
+    
+            <div class="form__input-container">
+              <label
+                class="form__label"
+              >
+                Название мероприятия
+              </label>
+    
+              <div class="form__date-time-container">
+                <input
+                  class="form__input"
+                  type="date"
+                  placeholder="Введите название"
+                  id="event-name"
+                >
+    
+                <input
+                  class="form__input"
+                  type="time"
+                  placeholder="Введите название"
+                  id="event-name"
+                >
+              </div>
+            </div>
+    
+            <div class="form__input-container">
+              <label
+                for="youtube-link"
+                class="form__label"
+              >
+                Ссылка на YouTube трансляцию
+              </label>
+    
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Вставтье ссылку"
+                id="youtube-link"
+              >
+            </div>
+    
+            <div class="form__input-container">
+              <label
+                for="link-none"
+                class="form__label"
+              >
+                Ссылка на заглушку
+              </label>
+    
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Вставтье ссылку"
+                id="link-none"
+              >
+            </div>
+    
+            <div class="form__input-container">
+              <label
+                for="button-link"
+                class="form__label"
+              >
+                Внешняя кнопка (ссылка)
+              </label>
+    
+              <input
+                class="form__input"
+                type="text"
+                placeholder="Вставтье ссылку"
+                id="button-link"
+              >
+            </div>
           </div>
   
-          <div class="form__input-container">
-            <label
-              for="youtube-link"
-              class="form__label"
-            >
-              Ссылка на YouTube трансляцию
-            </label>
-  
-            <input
-              class="form__input"
-              type="text"
-              placeholder="Вставтье ссылку"
-              id="youtube-link"
-            >
-          </div>
-  
-          <div class="form__input-container">
-            <label
-              for="link-none"
-              class="form__label"
-            >
-              Ссылка на заглушку
-            </label>
-  
-            <input
-              class="form__input"
-              type="text"
-              placeholder="Вставтье ссылку"
-              id="link-none"
-            >
-          </div>
-  
-          <div class="form__input-container">
-            <label
-              for="button-link"
-              class="form__label"
-            >
-              Внешняя кнопка (ссылка)
-            </label>
-  
-            <input
-              class="form__input"
-              type="text"
-              placeholder="Вставтье ссылку"
-              id="button-link"
-            >
+          <div class="form__desktop-block">
+            <div class="form__input-container">
+              <label
+                class="form__label"
+              >
+                Доступ к мероприятию:
+              </label>
+    
+              <fieldset class="form__fieldset">
+                <label class="form__label form__label--container-radio">
+                  По паролям
+                  <input
+                    class=""
+                    type="radio"
+                    id="by-passwords"
+                    name="radio"
+                  >
+                  <span class="form__radiomark"></span>
+                </label>
+    
+                <label class="form__label form__label--container-radio">
+                  Открытый
+                  <input
+                    class=""
+                    type="radio"
+                    id="by-open"
+                    name="radio"
+                  >
+                  <span class="form__radiomark"></span>
+                </label>
+              </fieldset>
+                
+            </div>
+    
+            <div class="form__input-container form__input-container--switch">
+              <span class="switch__title">
+                Чат при запуске мероприятия
+              </span>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="chat"
+                  id="chat"
+                  class="switch__input"
+                >
+                <span class="switch__slider"></span>
+              </label>
+            </div>
+    
+            <div class="form__input-container form__input-container--switch">
+              <span class="switch__title">
+                Кликабельные ссылки от пользователей в чате
+              </span>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="chat"
+                  id="chat"
+                  class="switch__input"
+                >
+                <span class="switch__slider"></span>
+              </label>
+            </div>
+    
+            <div class="form__input-container form__input-container--switch">
+              <span class="switch__title">
+                Корзина
+              </span>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="chat"
+                  id="chat"
+                  class="switch__input"
+                >
+                <span class="switch__slider"></span>
+              </label>
+            </div>
+    
+            <div class="form__input-container">
+              <label
+                for="presentation"
+                class="form__label"
+              >
+                <span class="form__label--title">Презентация:</span>
+    
+                <input
+                  type="file"
+                  name="presentation"
+                  id="presentation"
+                  class="form__file-input"
+                >
+                <span class="form__input-button">
+                  <span>Загрузить PDF</span>
+                  <img
+                    src="./images/download-icon.svg"
+                    alt=""
+                  >
+                </span>
+              </label>
+            </div>
+    
+            <div class="form__input-container">
+              <label
+                class="form__label"
+              >
+                Доступ к мероприятию:
+              </label>
+    
+              <fieldset class="form__fieldset">
+                <label class="form__label form__label--container-check">
+                  Фамилия
+                  <input
+                    type="checkbox"
+                    id="by-passwords"
+                    name="radio"
+                  >
+                  <span class="form__checkmark"></span>
+                </label>
+    
+                <label class="form__label form__label--container-check">
+                  Город
+                  <input
+                    type="checkbox"
+                    id="by-open"
+                    name="radio"
+                  >
+                  <span class="form__checkmark"></span>
+                </label>
+    
+                <label class="form__label form__label--container-check">
+                  <span class="lower-Popino-weight">Email</span>
+                  <input
+                    type="checkbox"
+                    id="by-open"
+                    name="radio"
+                  >
+                  <span class="form__checkmark"> </span>
+                </label>
+              </fieldset>
+                
+            </div>
           </div>
         </div>
 
-        <div class="from__input-container">
-          <label
-            class="form__label"
-          >
-            Имя ведущего
-          </label>
-
-          <fieldset class="form__fieldset">
-            <label for="by-passwords" class="form__label form__label--container">
-              <input
-                class=""
-                type="radio"
-                placeholder="Вставтье ссылку"
-                id="by-passwords"
-              >
-              <span class="form__radiomark"></span>
-            </label>
-
-            <label for="by-open" class="form__label form__label--container">
-              <input
-                class=""
-                type="radio"
-                placeholder="Вставтье ссылку"
-                id="by-open"
-              >
-              <span class="form__radiomark"></span>
-            </label>
-          </fieldset>
-            
-        </div>
-      
+        
+        <button
+          type="submit"
+          class="button button--primary form__submit-button"
+        >
+          Сохранить
+        </button>
       </form>
+    </div>
+
+    <div class="main__watermark watermark">
+      Trade Broadcast 2022 ©
     </div>
   </main>
 </body>

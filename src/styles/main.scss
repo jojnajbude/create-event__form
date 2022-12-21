@@ -1,6 +1,9 @@
 @use './utils/reset';
 
+@use './components/switch';
 @use './components/header';
 @use './components/nav';
 @use './components/main';
 @use './components/form';
+@use './components/button';
+@use './components/watermark';

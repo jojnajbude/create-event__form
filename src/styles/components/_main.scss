@@ -13,4 +13,15 @@
     line-height: 24px;
     text-align: center;
   }
+
+  &__form-container {
+    @include onDesktop {
+      margin: 0 auto;
+      width: min-content;
+    }
+  }
+
+  &__watermark {
+    margin-bottom: 25px;
+  }
 }

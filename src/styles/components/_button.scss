@@ -1,0 +1,22 @@
+@use '../utils/mixins' as *;
+@use '../utils/vars' as *;
+
+.button {
+  color: $white;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  background-color: $main-color;
+  outline: none;
+
+  border-radius: 7px;
+  border: none;
+}
