@@ -339,7 +339,7 @@ ul {
   display: none;
   width: 100%;
   height: 100%;
-  background-image: url("../../../src/images/Check.svg");
+  background-image: url("../../images/Check.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
